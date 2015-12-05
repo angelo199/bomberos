@@ -1,0 +1,107 @@
+/* Requires: normalize.css */
+/* Global Reset & Standards ---------------------- */
+
+@-moz-document url-prefix() { 
+	form.custom div.custom.dropdown a.selector { height: 30px }
+}
+.lt-ie9 form.custom div.custom.dropdown a.selector { height: 30px }
+/* The Grid ---------------------- */
+.row { width: 980px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row.collapse .column,
+.row.collapse .columns { padding: 0 }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -15px; }
+.row .row.collapse { margin: 0 }
+.column,
+.columns { float: left; min-height: 1px; padding: 0 15px; position: relative; }
+.column.centered,
+.columns.centered { float: none; margin: 0 auto; }
+[class*="column"] + [class*="column"]:last-child { float: right }
+[class*="column"] + [class*="column"].end { float: left }
+.one,.row .one { width: 8.33333% }
+.two,.row .two { width: 16.66667% }
+.three,.row .three { width: 25% }
+.four,.row .four { width: 33.33333% }
+.five,.row .five { width: 41.66667% }
+.six,.row .six { width: 50% }
+.seven,.row .seven { width: 58.33333% }
+.eight,.row .eight { width: 66.66667% }
+.nine,.row .nine { width: 75% }
+.ten,.row .ten { width: 83.33333% }
+.eleven,.row .eleven { width: 91.66667% }
+.twelve,.row .twelve { width: 100% }
+.row .offset-by-one { margin-left: 8.33333% }
+.row .offset-by-two { margin-left: 16.66667% }
+.row .offset-by-three { margin-left: 25% }
+.row .offset-by-four { margin-left: 33.33333% }
+.row .offset-by-five { margin-left: 41.66667% }
+.row .offset-by-six { margin-left: 50% }
+.row .offset-by-seven { margin-left: 58.33333% }
+.row .offset-by-eight { margin-left: 66.66667% }
+.row .offset-by-nine { margin-left: 75% }
+.row .offset-by-ten { margin-left: 83.33333% }
+
+/* Nicolas Gallagher's micro clearfix */
+.row { *zoom: 1  }
+.row:before,.row:after { content: ""; display: table; }
+.row:after { clear: both }
+
+
+/* CONTENT ---------------------- */
+
+a:focus { outline: none }
+#panel { background: #222; height: 70px; display: none; color: #fff; padding: 20px 0 25px 0; }
+.slide { margin: 0; padding: 0; }
+.btn-slide { text-align: center; width: 20px; height: 10px; padding: 10px 10px 0 0; margin: 0 auto; display: block; font: bold 120%/100% Arial, Helvetica, sans-serif; color: #fff; text-decoration: none; float: right; }
+.pics { float: left; margin-right: 10px; }
+.infotext { margin-top: 7px }
+#subheader {  position: relative; padding: 25px 50px; position: relative; }
+#subheader p { font-size: 1.4em; margin-bottom: 0; }
+#subheader a { color: #fff; text-decoration: none; }
+#subheader a:hover { text-decoration: none; color: #fff; }
+.subheadertext {padding:40px 0 60px !important;}
+.bread { font-family: DroidSansRegular; margin-top: 8px; font-size: 16px !important; }
+.topborder { border-top: 4px solid }
+.header { height: 80px }
+.logo { margin-top: 34px;margin-bottom: 30px; }
+.logo h4 { font-size: 27px }
+.hr { height: 36px }
+.name { display: none }
+.sidebartitle { margin-bottom: 20px; border-bottom: 1px dashed #ccc; padding-bottom: 10px; }
+.sectiontitle { background: url(../images/dots.gif) repeat-x scroll 0 0 transparent; background-position: center; margin: 5px 0 25px; min-height: 20px; }
+.sectiontitle h4 { font-size: 23px; background:#fff; display: inline; padding-right: 10px; padding-left: 10px; }
+.centersectiontitle { background: url(../images/dots.gif) repeat-x scroll 0 0 transparent; background-position: center; margin: 10px 0 25px; min-height: 20px; text-align: center; }
+.centersectiontitle h4 { font-size: 23px; background: #fff; display: inline; padding-right: 10px; padding-left: 10px; }
+.wrappic { border: 1px solid #CCCCCC; padding: 2px; }
+.wrappic:hover { border: 1px solid #CCCCCC; padding: 2px; background: url(../images/wraphover.png) repeat !important; }
+.readmore,a.readmore { cursor: pointer; border: 0px; color: #fff; padding: 6px 10px; display: inline; -webkit-transition: background-color 300ms linear; -moz-transition: background-color 300ms linear; -o-transition: background-color 300ms linear; -ms-transition: background-color 300ms linear; transition: background-color 300ms linear; }
+.readmore:hover,a.readmore:hover { background: #333; color: #fff; }
+#testimonials { margin: 10px 0 20px;border-left: solid 6px #33877d;}
+#testimonials blockquote {  font-family: Georgia, "Times New Roman", Times, serif; font-style: italic; color: #808080; display: block; }
+#testimonials blockquote p { margin: 0 !important; padding: 5px!important; }
+#testimonials blockquote cite { font-style: normal; display: block; text-transform: uppercase; font-weight: bold; font-style: italic; padding-left: 5px; margin-top: 10px; }
+#footer { background: #151515; color: #666; padding: 30px 0; margin-top: 36px; }
+#footer a { color: #666; font-size: 12px; }
+#footer h1 { font-size: 16px; color: #ccc; margin-bottom: 20px; }
+.newsmargin { margin-left: 46px }
+#footer .button { box-shadow: none; width: auto; nowhitespace: afterproperty; background: #444; color: #999; cursor: pointer; display: inline-block; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; line-height: 1; margin: 0; outline: none; padding: 10px 10px 11px; position: relative; text-align: center; text-decoration: none; -webkit-transition: background-color 0.15s ease-in-out; -moz-transition: background-color 0.15s ease-in-out; -o-transition: background-color 0.15s ease-in-out; transition: background-color 0.15s ease-in-out; }
+#footer input[type="text"] { background: #333; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; border: 1px solid #333; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; color: #999; display: block; font-size: 12px; margin: 0 0 12px 0; padding: 6px; height: 32px; width: 100%; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -o-transition: all 0.15s linear; transition: all 0.15s linear; box-shadow: none; }
+.copyright { background: #111; padding: 7px 0; border-top: 1px solid #181818; color: #444; }
+.facebook { background: url(../images/socialpack/facebook.png) }
+.facebook:hover { background: url(../images/socialpack/facebooka.png) }
+.twitter { background: url(../images/socialpack/twitter.png) }
+.twitter:hover { background: url(../images/socialpack/twittera.png) }
+.dribbble { background: url(../images/socialpack/dribbble.png) }
+.dribbble:hover { background: url(../images/socialpack/dribbblea.png) }
+.deviantart { background: url(../images/socialpack/deviantart.png) }
+.deviantart:hover { background: url(../images/socialpack/deviantarta.png) }
+.flickr { background: url(../images/socialpack/flickr.png) }
+.flickr:hover { background: url(../images/socialpack/flickra.png) }
+.newsletter { width: 250px !important }
+.back-top-wrapper { width: 100%; position: absolute; overflow: hidden; height: 50px; display: block; }
+.back-top { bottom: 55px; right: 20px; margin-bottom: 0; display: block; position: fixed; display: scroll; display: none; }
+.back-top a { width: 50px; nowhitespace: afterproperty; height: 50px; display: block; text-align: center; text-transform: uppercase; text-decoration: none; background: #333 url(../images/up-arrow.png) no-repeat center center; border-radius: 5px; /* transition */ -webkit-transition: 1s;-moz-transition:1s;transition:1s; ; }
+.back-top a:hover { background-color: #333 } /* arrow icon (span tag) */
+.back-top span { width: 50px; nowhitespace: afterproperty; height: 50px; display: block; border-radius: 10px; /* transition */ -webkit-transition: 1s;-moz-transition:1s;transition:1s; ; }
+.socialteam.social { margin-right: 0px !important }
+
